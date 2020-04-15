@@ -1,0 +1,214 @@
+<!DOCTYPE huml>
+<html>
+
+<head>
+	<title>YXP的第二个网页</title>
+	<meta charset="UTF-8">
+	<!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+	<style>
+		table {
+			border: 1px solid black;
+			border-collapse: collapse;
+			/* 双线合一 */
+		}
+
+		th,
+		td {
+			border: 1px solid black;
+			text-align: center;
+		}
+
+		caption {
+			padding: 10px;
+		}
+
+		thead th {
+			background: grey;
+			color: white;
+		}
+
+		tbody th {
+			background: lightgrey;
+			color: white;
+		}
+
+		body {
+			background-color: beige;
+		}
+
+		.star {
+			color: red
+		}
+		#age:focus {
+			background-color: skyblue;
+		}
+	</style>
+	<style type="text/css">
+		<!--.bold {font-weight: bolder;}
+		-->
+		.italic
+		{
+		font-style:
+		italic;
+		}
+		::selection
+		{
+		background-color:
+		red;
+		color:black
+		}
+		input#age:in-range
+		{
+		border:
+		2px
+		solid
+		rgb(10, 247, 10);
+		}
+		input#age:out-of-range
+		{
+		border:
+		2px
+		solid
+		red;
+		}
+	</style>
+	<link rel="icon" type="imag/x-icon"
+		href="http://img.599ku.com/element_pic/24/55/32/42/12f4d1b932c100cea9634ddb905f7d18.jpg">
+
+</head>
+
+<body>
+	<table align="center">
+		<caption><strong>4061狗窝简介</strong></caption>
+		<thead>
+			<tr>
+				<th>姓名</th>
+				<th>年龄</th>
+				<th>性格</th>
+				<th>职位</th>
+				<th>特长、爱好</th>
+				<th>幽默指数</th>
+				<th>渣男指数</th>
+				<th>照片</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<th>殷鑫平</th>
+				<td>19</td>
+				<td>爱学习、懒惰</td>
+				<td>4061寝室长、院心自助外交部</td>
+				<td>篮球、吃鸡、睡觉</td>
+				<td class="star">*****</td>
+				<td class="star">*</td>
+				<td><img src="https://i.loli.net/2020/02/06/rZa8vFHu653WlB9.jpg" alt="殷鑫平照骗" width=80px></td>
+			</tr>
+
+			<tr>
+				<th>周松成</th>
+				<td>18</td>
+				<td>安静、老实</td>
+				<td>4061寝室成员</td>
+				<td>各类手游、网球</td>
+				<td class="star">*</td>
+				<td class="star">*</td>
+				<td><img src="https://i.loli.net/2020/02/06/TCbj4KYWyeg65Up.jpg" alt="周松成照片" width=80px></td>
+			</tr>
+
+			<tr>
+				<th>吕润杰</th>
+				<td>18</td>
+				<td>沙雕、实干</td>
+				<td>4061寝室成员、校科协外联成员</td>
+				<td>王者、足球、网球</td>
+				<td class="star">*****</td>
+				<td class="star">*****</td>
+				<td><img src="https://i.loli.net/2020/02/06/LWZdQDuK3IJwoV2.jpg" alt="吕润杰照片" width=80px></td>
+			</tr>
+
+			<tr>
+				<th>行祖衍</th>
+				<td>18</td>
+				<td>随遇而安、冲动</td>
+				<td>4061寝室、校心理自助宣设部成员</td>
+				<td>王者、端游、乒乓</td>
+				<td class="star">***</td>
+				<td class="star">**</td>
+				<td><img src="https://i.loli.net/2020/02/06/dATLGvQgpsqCJF3.jpg" alt="行祖衍照片" width=80px></td>
+			</tr>
+
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<td colspan=8 class="italic" style="color: red">
+					<small>注：各类指数满共<span>5颗*</span>；此表纯属娱乐，如有雷同，纯属巧合。</small></td>
+			</tr>
+		</tfoot>
+
+
+	</table>
+
+	<form align="center">
+		<p>1.你是否满意，请勾选，然后提交：</p>
+
+		<label for="yes">是</label>
+		<input type="radio" name="1" id="yes" />
+		<!--单选框-->
+		<!--多选框是checkbox-->
+		<br>
+		<label for="no">否</label>
+		<input type="radio" name="1" id="no" />
+		<br><br>
+
+
+		<p>2.那你喜欢谁呢？</p>
+		<select autofocus>
+			<option>殷鑫平</option>
+			<option>周松成</option>
+			<option>吕润杰</option>
+			<option>行祖衍</option>
+		</select>
+
+		<br><br>
+
+
+		<label>3.那你喜欢他的程度是<input type="range" name="love" value="0" max="100000" step="10"></label>
+
+
+		<!--button type="reset">重写</button>-->
+		<!--<label><input type="image"  onclick="m()" src="http://img.599ku.com/element_pic/24/55/32/42/12f4d1b932c100cea9634ddb905f7d18.jpg">图片按钮</label>-->
+
+		<script>
+			function ms() {
+				alert("放心，你提交的我都收不到。嘻嘻！");
+			}
+			function msg() {
+				alert("提交成功！");
+			}
+		</script>
+
+		<br><br><br>
+
+		<label for="age">4.那小姐姐、小哥哥，不知你多大丫：<input type="number" name="age" min="10" max="22" step="1" id="age"> </label>
+		<br><br><br>
+
+		<strong>5.给我些建议吧！</strong>
+		<div class="blank"> <textarea cols="50" rows="2"></textarea></div>
+		<br><br>
+
+		<input type="button" value="提交" onclick="msg()">
+
+		<input type="reset" value="重写" ;>
+		<br><br>
+
+		<input type="button" onclick="ms()" value="提交完再点我哦！">
+		<br><br>
+	</form>
+
+</body>
+
+
+
+</html>
